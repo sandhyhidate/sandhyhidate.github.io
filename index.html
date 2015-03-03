@@ -1,5 +1,43 @@
-test error 404..
+<html>
+<head>
+<script language="JavaScript">
+<!-- Hide the script from old browsers --
 
-test broo.. :D
+var timerID = null;
+var timerRunning = false;
+var id,pause=0,position=0;
 
-###
+function txtScroll() {
+var i,x
+var message="sandhy hidate.............";
+x=(60/message.length)+1;
+ for(i=0;i<=x;i++) message+=" "+message;
+ document.tickerTape.tickerTape.value=message.substring(position,position+60);
+ if(position++==128) position=2;
+id=setTimeout("txtScroll()",1000/10);}function action() {
+        if(!pause) {
+                clearTimeout(id);
+                pause=1; }
+
+        else {
+                ticker();
+                pause=0; }
+ }
+
+// --End Hiding Here -->
+</script>
+
+<title>Belajar Java</title>
+
+<A HREF="newpage.htm" onMouseOver="window.status='Klik di sini melihat halaman selanjutnya!';return true">
+
+<script language="JavaScript">
+alert("Klik disini");
+</script>
+
+<body onLoad="txtScroll()">
+<center><P><BR>
+<form name="tickerTape"><input type=text name="tickerTape" size=50></form>
+</center>
+</body>
+</html>
